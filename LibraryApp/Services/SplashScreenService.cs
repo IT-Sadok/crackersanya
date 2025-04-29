@@ -1,4 +1,8 @@
-﻿public class SplashScreenService : ISplashScreenService
+﻿using LibraryApp.Interfaces;
+
+namespace LibraryApp.Services;
+
+public class SplashScreenService : ISplashScreenService
 {
     static Random rand = new Random();
 

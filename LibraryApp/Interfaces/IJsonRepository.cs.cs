@@ -1,8 +1,7 @@
-﻿namespace LibraryApp.Repositories
+﻿namespace LibraryApp.Interfaces;
+
+public interface IJsonRepository
 {
-    public interface IJsonRepository
-    {
-        Task SaveDataAsync<T>(T data);
-        Task<List<T>> LoadDataAsync<T>();
-    }
+    Task SaveDataAsync<T>(T data);
+    Task<List<T>> LoadDataAsync<T>();
 }

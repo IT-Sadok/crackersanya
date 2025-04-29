@@ -1,6 +1,8 @@
 ﻿using LibraryApp.Builders;
 using LibraryApp.Helpers;
-using LibraryApp.Services;
+using LibraryApp.Interfaces;
+
+namespace LibraryApp.Services;
 
 public class MenuService : IMenuService
 {
@@ -67,7 +69,7 @@ public class MenuService : IMenuService
 
     private async Task ViewAllBooksAsync()
     {
-        var books = await _bookService.GetAllBooksAsync();
+        var books = (await _bookService.GetAllBooksAsync()).ToList();
         if (books.Count == 0)
         {
             _displayService.DisplayError("No books available.");
@@ -142,7 +144,7 @@ public class MenuService : IMenuService
         string query = InputHelper.PromptForInput("Enter a keyword (title or author): ", "Search query cannot be empty.");
 
         var books = await _bookService.GetAllBooksAsync();
-        var filteredBooks = _bookService.SearchBooks(books, query);
+        var filteredBooks = _bookService.SearchBooks(books, query).ToList();
 
         if (filteredBooks.Count == 0)
         {
@@ -214,8 +216,6 @@ public class MenuService : IMenuService
             _displayService.DisplayError(result);
         }
     }
-
-
 
     private bool ConfirmAction(string message)
     {

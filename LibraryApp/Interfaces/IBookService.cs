@@ -1,9 +1,11 @@
 ﻿using LibraryApp.Models;
 
+namespace LibraryApp.Interfaces;
+
 public interface IBookService
 {
-    Task<List<Book>> GetAllBooksAsync();
-    List<Book> SearchBooks(List<Book> books, string query);
+    Task<IEnumerable<Book>> GetAllBooksAsync();
+    IEnumerable<Book> SearchBooks(IEnumerable<Book> books, string query);
     Task<string> BorrowBookAsync(string code);
     Task<string> ReturnBookAsync(string code);
     Task AddBookAsync(Book book);

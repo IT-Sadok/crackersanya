@@ -1,14 +1,13 @@
 ﻿using LibraryApp.Models;
 
-namespace LibraryApp.Services
+namespace LibraryApp.Interfaces;
+
+public interface ILibraryService
 {
-    public interface ILibraryService
-    {
-        Task<List<Book>> GetAllBooksAsync();
-        Task AddBookAsync(Book book);
-        Task RemoveBookByCodeAsync(string code);
-        Task<List<Book>> GetAvailableBooksAsync();
-        Task<string> BorrowBookAsync(string code);
-        Task<string> ReturnBookAsync(string code);
-    }
+    Task<IEnumerable<Book>> GetAllBooksAsync();
+    Task AddBookAsync(Book book);
+    Task RemoveBookByCodeAsync(string code);
+    Task<IEnumerable<Book>> GetAvailableBooksAsync();
+    Task<string> BorrowBookAsync(string code);
+    Task<string> ReturnBookAsync(string code);
 }

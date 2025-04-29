@@ -1,5 +1,7 @@
-﻿using LibraryApp.Models;
-using LibraryApp.Services;
+﻿using LibraryApp.Interfaces;
+using LibraryApp.Models;
+
+namespace LibraryApp.Services;
 
 public class BookService : IBookService
 {
@@ -10,16 +12,16 @@ public class BookService : IBookService
         _libraryService = libraryService;
     }
 
-    public async Task<List<Book>> GetAllBooksAsync()
+    public async Task<IEnumerable<Book>> GetAllBooksAsync()
     {
         return await _libraryService.GetAllBooksAsync();
     }
 
-    public List<Book> SearchBooks(List<Book> books, string query)
+    public IEnumerable<Book> SearchBooks(IEnumerable<Book> books, string query)
     {
         return books.Where(b =>
             b.Title.Contains(query, StringComparison.OrdinalIgnoreCase) ||
-            b.Author.Contains(query, StringComparison.OrdinalIgnoreCase)).ToList();
+            b.Author.Contains(query, StringComparison.OrdinalIgnoreCase));
     }
 
     public async Task<string> BorrowBookAsync(string code)

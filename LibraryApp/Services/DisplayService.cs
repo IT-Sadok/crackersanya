@@ -1,4 +1,7 @@
-﻿using LibraryApp.Models;
+﻿using LibraryApp.Interfaces;
+using LibraryApp.Models;
+
+namespace LibraryApp.Services;
 
 public class DisplayService : IDisplayService
 {

@@ -1,7 +1,6 @@
-﻿namespace LibraryApp.Services
+﻿namespace LibraryApp.Interfaces;
+
+public interface IMenuService
 {
-    public interface IMenuService
-    {
-        Task ShowMenuAsync();
-    }
+    Task ShowMenuAsync();
 }
