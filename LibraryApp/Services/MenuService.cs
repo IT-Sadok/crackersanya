@@ -1,6 +1,7 @@
 ﻿using LibraryApp.Builders;
 using LibraryApp.Helpers;
 using LibraryApp.Interfaces;
+using LibraryApp.Models;
 
 namespace LibraryApp.Services;
 
@@ -15,7 +16,7 @@ public class MenuService : IMenuService
         _displayService = displayService;
     }
 
-    public async Task ShowMenuAsync()
+    public async Task RunAppAsync()
     {
         bool exit = false;
 
@@ -95,26 +96,7 @@ public class MenuService : IMenuService
             if (int.TryParse(input, out int bookNumber) && bookNumber > 0 && bookNumber <= books.Skip(currentPage * pageSize).Take(pageSize).Count())
             {
                 var selectedBook = books.Skip(currentPage * pageSize).Take(pageSize).ToList()[bookNumber - 1];
-                if (!selectedBook.IsAvailable)
-                {
-                    _displayService.DisplayError("This book is not available for borrowing.");
-                }
-                else
-                {
-                    var result = await _bookService.BorrowBookAsync(selectedBook.Code);
-                    if (result.Contains("success", StringComparison.OrdinalIgnoreCase))
-                    {
-                        selectedBook.IsAvailable = false;
-                        _displayService.DisplaySuccess(result);
-                    }
-                    else
-                    {
-                        _displayService.DisplayError(result);
-                    }
-                }
-
-                Console.WriteLine("\nPress any key to continue...");
-                Console.ReadKey();
+                await BorrowBookAsync(selectedBook);
             }
             else if (input?.ToUpper() == "P" && currentPage > 0)
             {
@@ -152,7 +134,46 @@ public class MenuService : IMenuService
         }
         else
         {
-            _displayService.DisplayBooks(filteredBooks, 0, filteredBooks.Count);
+            const int pageSize = 10;
+            int currentPage = 0;
+
+            while (true)
+            {
+                _displayService.DisplayBooks(filteredBooks, currentPage, pageSize);
+
+                Console.WriteLine("\nOptions:");
+                Console.WriteLine("Enter the number of the book to borrow (only if available).");
+                if (currentPage > 0) Console.WriteLine("P. Previous page");
+                if ((currentPage + 1) * pageSize < filteredBooks.Count) Console.WriteLine("N. Next page");
+                Console.WriteLine("E. Exit");
+
+                Console.Write("\nChoose an option: ");
+                var input = Console.ReadLine();
+
+                if (int.TryParse(input, out int bookNumber) && bookNumber > 0 && bookNumber <= filteredBooks.Skip(currentPage * pageSize).Take(pageSize).Count())
+                {
+                    var selectedBook = filteredBooks.Skip(currentPage * pageSize).Take(pageSize).ToList()[bookNumber - 1];
+                    await BorrowBookAsync(selectedBook);
+                }
+                else if (input?.ToUpper() == "P" && currentPage > 0)
+                {
+                    currentPage--;
+                }
+                else if (input?.ToUpper() == "N" && (currentPage + 1) * pageSize < filteredBooks.Count)
+                {
+                    currentPage++;
+                }
+                else if (input?.ToUpper() == "E")
+                {
+                    break;
+                }
+                else
+                {
+                    _displayService.DisplayError("Invalid option. Please try again.");
+                    Console.WriteLine("\nPress any key to continue...");
+                    Console.ReadKey();
+                }
+            }
         }
 
         Console.WriteLine("\nPress any key to return to the menu...");
@@ -207,15 +228,42 @@ public class MenuService : IMenuService
         string code = InputHelper.PromptForInput("Enter the book code to return: ", "The book code cannot be empty.");
         var result = await _bookService.ReturnBookAsync(code);
 
-        if (result.Contains("success", StringComparison.OrdinalIgnoreCase))
+        if (result.Success)
         {
-            _displayService.DisplaySuccess(result);
+            _displayService.DisplaySuccess(result.Message);
         }
         else
         {
-            _displayService.DisplayError(result);
+            _displayService.DisplayError(result.Message);
         }
+
     }
+
+    private async Task BorrowBookAsync(Book selectedBook)
+    {
+        if (!selectedBook.IsAvailable)
+        {
+            _displayService.DisplayError("This book is not available for borrowing.");
+            return;
+        }
+
+        var result = await _bookService.BorrowBookAsync(selectedBook.Code);
+
+        if (result.Success)
+        {
+            selectedBook.IsAvailable = false;
+            _displayService.DisplaySuccess(result.Message);
+        }
+        else
+        {
+            _displayService.DisplayError(result.Message);
+        }
+
+        Console.WriteLine("\nPress any key to continue...");
+        Console.ReadKey();
+    }
+
+
 
     private bool ConfirmAction(string message)
     {

@@ -8,6 +8,6 @@ public interface ILibraryService
     Task AddBookAsync(Book book);
     Task RemoveBookByCodeAsync(string code);
     Task<IEnumerable<Book>> GetAvailableBooksAsync();
-    Task<string> BorrowBookAsync(string code);
-    Task<string> ReturnBookAsync(string code);
+    Task<OperationResult<Book>> BorrowBookAsync(string code);
+    Task<OperationResult<Book>> ReturnBookAsync(string code);
 }

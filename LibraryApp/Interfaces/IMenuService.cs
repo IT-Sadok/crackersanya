@@ -2,5 +2,5 @@
 
 public interface IMenuService
 {
-    Task ShowMenuAsync();
+    Task RunAppAsync();
 }

@@ -1,4 +1,5 @@
-﻿using LibraryApp.Interfaces;
+﻿using LibraryApp.Common;
+using LibraryApp.Interfaces;
 using LibraryApp.Repositories;
 using LibraryApp.Services;
 using Microsoft.Extensions.Configuration;
@@ -7,7 +8,7 @@ using Microsoft.Extensions.Hosting;
 
 // Define the path to the "Shelf" folder
 string projectRoot = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", ".."));
-string libraryPath = Path.Combine(projectRoot, "Shelf", "library.json");
+string libraryPath = Path.Combine(projectRoot, Constants.DefaultLibraryPath);
 
 // Create Host with DI
 var host = Host.CreateDefaultBuilder(args)
@@ -20,7 +21,7 @@ var host = Host.CreateDefaultBuilder(args)
             var configuration = new ConfigurationBuilder()
                 .AddInMemoryCollection(new Dictionary<string, string?>
                 {
-            { "LibraryPath", libraryPath }
+                    { "LibraryPath", libraryPath }
                 })
                 .Build();
             return configuration;
@@ -39,4 +40,4 @@ splashScreenService.ShowGreetingsAnimation();
 
 // Run the application
 var menuService = host.Services.GetRequiredService<IMenuService>();
-await menuService.ShowMenuAsync();
+await menuService.RunAppAsync();

@@ -24,12 +24,12 @@ public class BookService : IBookService
             b.Author.Contains(query, StringComparison.OrdinalIgnoreCase));
     }
 
-    public async Task<string> BorrowBookAsync(string code)
+    public async Task<OperationResult<Book>> BorrowBookAsync(string code)
     {
         return await _libraryService.BorrowBookAsync(code);
     }
 
-    public async Task<string> ReturnBookAsync(string code)
+    public async Task<OperationResult<Book>> ReturnBookAsync(string code)
     {
         return await _libraryService.ReturnBookAsync(code);
     }
