@@ -29,28 +29,13 @@ public class JsonRepository : IJsonRepository
 
     public async Task SaveDataAsync<T>(T data)
     {
-        try
-        {
-            string jsonString = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
-            await File.WriteAllTextAsync(_filePath, jsonString);
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error saving data to file: {FilePath}", _filePath);
-        }
+        string jsonString = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+        await File.WriteAllTextAsync(_filePath, jsonString);
     }
 
     public async Task<List<T>> LoadDataAsync<T>()
     {
-        try
-        {
-            var jsonData = await File.ReadAllTextAsync(_filePath);
-            return JsonSerializer.Deserialize<List<T>>(jsonData) ?? new List<T>();
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error loading data from file: {FilePath}", _filePath);
-            return new List<T>();
-        }
+        var jsonData = await File.ReadAllTextAsync(_filePath);
+        return JsonSerializer.Deserialize<List<T>>(jsonData) ?? new List<T>();
     }
 }
