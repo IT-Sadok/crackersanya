@@ -8,7 +8,7 @@ public class LibraryOperation
 
     public required string BookCode { get; set; }
 
-    public string? UpdateField { get; set; }
+    public string UpdateField { get; set; }
 
-    public string? UpdateValue { get; set; }
+    public string UpdateValue { get; set; }
 }

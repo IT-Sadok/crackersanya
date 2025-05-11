@@ -17,27 +17,6 @@ public class BatchOperationProcessor : IBatchOperationProcessor
         _logger = logger;
     }
 
-    public async Task ProcessLibraryOperationsAsync(List<LibraryOperation> operations)
-    {
-        if (operations == null || operations.Count == 0)
-        {
-            _logger.LogInformation("No operations to process.");
-            return;
-        }
-
-        var tasks = new List<Task>();
-
-        foreach (var op in operations)
-        {
-            tasks.Add(Task.Run(async () =>
-            {
-                await PerformSingleOperationAsync(op);
-            }));
-        }
-
-        await Task.WhenAll(tasks);
-    }
-
     private async Task PerformSingleOperationAsync(LibraryOperation op)
     {
         if (op == null)
@@ -149,5 +128,26 @@ public class BatchOperationProcessor : IBatchOperationProcessor
         }
 
         return operations;
+    }
+
+    private async Task ProcessLibraryOperationsAsync(List<LibraryOperation> operations)
+    {
+        if (operations == null || operations.Count == 0)
+        {
+            _logger.LogInformation("No operations to process.");
+            return;
+        }
+
+        var tasks = new List<Task>();
+
+        foreach (var op in operations)
+        {
+            tasks.Add(Task.Run(async () =>
+            {
+                await PerformSingleOperationAsync(op);
+            }));
+        }
+
+        await Task.WhenAll(tasks);
     }
 }
