@@ -1,5 +1,6 @@
 ﻿using LibraryApp.Common;
 using LibraryApp.Interfaces;
+using LibraryApp.Processors;
 using LibraryApp.Repositories;
 using LibraryApp.Services;
 using Microsoft.Extensions.Configuration;
@@ -31,6 +32,7 @@ var host = Host.CreateDefaultBuilder(args)
         services.AddSingleton<IDisplayService, DisplayService>();
         services.AddSingleton<IMenuService, MenuService>();
         services.AddSingleton<ISplashScreenService, SplashScreenService>();
+        services.AddSingleton<IBatchOperationProcessor, BatchOperationProcessor>();
     })
     .Build();
 

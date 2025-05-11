@@ -9,11 +9,13 @@ public class MenuService : IMenuService
 {
     private readonly IBookService _bookService;
     private readonly IDisplayService _displayService;
+    private readonly IBatchOperationProcessor _batchOperationProcessor;
 
-    public MenuService(IBookService bookService, IDisplayService displayService)
+    public MenuService(IBookService bookService, IDisplayService displayService, IBatchOperationProcessor batchOperationProcessor)
     {
         _bookService = bookService;
         _displayService = displayService;
+        _batchOperationProcessor = batchOperationProcessor;
     }
 
     public async Task RunAppAsync()
@@ -30,7 +32,8 @@ public class MenuService : IMenuService
             Console.WriteLine("3. Return a book");
             Console.WriteLine("4. Add a book");
             Console.WriteLine("5. Remove a book");
-            Console.WriteLine("6. Exit");
+            Console.WriteLine("6. *EXPEREMENTAL* Run simulation for updating 50 books. [Backup of library.json recommended]");
+            Console.WriteLine("7. Exit");
             Console.Write("Choose an action (1-6): ");
 
             var choice = Console.ReadLine();
@@ -53,6 +56,9 @@ public class MenuService : IMenuService
                     await RemoveBookAsync();
                     break;
                 case "6":
+                    await RunSimulationAsync();
+                    break;
+                case "7":
                     exit = true;
                     break;
                 default:
@@ -263,7 +269,11 @@ public class MenuService : IMenuService
         Console.ReadKey();
     }
 
-
+    private async Task RunSimulationAsync()
+    {
+        Console.Clear();
+        await _batchOperationProcessor.RunSimulationAsync();
+    }
 
     private bool ConfirmAction(string message)
     {

@@ -9,6 +9,7 @@ public class JsonRepository : IJsonRepository
 {
     private readonly string _filePath;
     private readonly ILogger<JsonRepository> _logger;
+    private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(1, 1);
 
     public JsonRepository(IConfiguration configuration, ILogger<JsonRepository> logger)
     {
@@ -29,13 +30,29 @@ public class JsonRepository : IJsonRepository
 
     public async Task SaveDataAsync<T>(T data)
     {
-        string jsonString = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
-        await File.WriteAllTextAsync(_filePath, jsonString);
+        await _semaphore.WaitAsync();
+        try
+        {
+            string jsonString = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+            await File.WriteAllTextAsync(_filePath, jsonString);
+        }
+        finally
+        {
+            _semaphore.Release();
+        }
     }
 
     public async Task<List<T>> LoadDataAsync<T>()
     {
-        var jsonData = await File.ReadAllTextAsync(_filePath);
-        return JsonSerializer.Deserialize<List<T>>(jsonData) ?? new List<T>();
+        await _semaphore.WaitAsync();
+        try
+        {
+            var jsonData = await File.ReadAllTextAsync(_filePath);
+            return JsonSerializer.Deserialize<List<T>>(jsonData) ?? new List<T>();
+        }
+        finally
+        {
+            _semaphore.Release();
+        }
     }
 }
