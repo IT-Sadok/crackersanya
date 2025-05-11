@@ -1,5 +1,6 @@
 ﻿using LibraryApp.Interfaces;
 using LibraryApp.Models;
+using LibraryApp.Utils;
 using Microsoft.Extensions.Logging;
 
 namespace LibraryApp.Services;
@@ -23,7 +24,7 @@ public class LibraryService : ILibraryService
 
     public async Task AddBookAsync(Book book)
     {
-        await ExecuteSynchronizedAsync(async () =>
+        await SemaphoreExecutor.ExecuteAsync(_serviceOperationSemaphore, async () =>
         {
             var books = (await _jsonRepository.LoadDataAsync<Book>()).ToList();
             books.Add(book);
@@ -33,7 +34,7 @@ public class LibraryService : ILibraryService
 
     public async Task RemoveBookByCodeAsync(string code)
     {
-        await ExecuteSynchronizedAsync(async () =>
+        await SemaphoreExecutor.ExecuteAsync(_serviceOperationSemaphore, async () =>
         {
             var books = (await _jsonRepository.LoadDataAsync<Book>()).ToList();
             var bookToRemove = books.FirstOrDefault(b => b.Code == code);
@@ -57,7 +58,7 @@ public class LibraryService : ILibraryService
 
     public async Task<OperationResult<Book>> BorrowBookAsync(string code)
     {
-        return await ExecuteSynchronizedAsync(async () =>
+        return await SemaphoreExecutor.ExecuteAsync(_serviceOperationSemaphore, async () =>
         {
             var books = (await _jsonRepository.LoadDataAsync<Book>()).ToList();
             var bookToBorrow = books.FirstOrDefault(b => b.Code == code && b.IsAvailable);
@@ -81,7 +82,7 @@ public class LibraryService : ILibraryService
 
     public async Task<OperationResult<Book>> ReturnBookAsync(string code)
     {
-        return await ExecuteSynchronizedAsync(async () =>
+        return await SemaphoreExecutor.ExecuteAsync(_serviceOperationSemaphore, async () =>
         {
             var books = (await _jsonRepository.LoadDataAsync<Book>()).ToList();
             var bookToReturn = books.FirstOrDefault(b => b.Code == code && !b.IsAvailable);
@@ -105,7 +106,7 @@ public class LibraryService : ILibraryService
 
     public async Task<OperationResult<Book>> UpdateBookAsync(string code, string field, string value)
     {
-        return await ExecuteSynchronizedAsync(async () =>
+        return await SemaphoreExecutor.ExecuteAsync(_serviceOperationSemaphore, async () =>
         {
             var books = (await _jsonRepository.LoadDataAsync<Book>()).ToList();
             var bookToUpdate = books.FirstOrDefault(b => b.Code == code);
@@ -154,31 +155,5 @@ public class LibraryService : ILibraryService
                     return OperationResult<Book>.FailureResult($"Unknown or unsupported field '{field}' for book {code}.");
             }
         });
-    }
-
-    private async Task ExecuteSynchronizedAsync(Func<Task> operation)
-    {
-        await _serviceOperationSemaphore.WaitAsync();
-        try
-        {
-            await operation();
-        }
-        finally
-        {
-            _serviceOperationSemaphore.Release();
-        }
-    }
-
-    private async Task<TResult> ExecuteSynchronizedAsync<TResult>(Func<Task<TResult>> operation)
-    {
-        await _serviceOperationSemaphore.WaitAsync();
-        try
-        {
-            return await operation();
-        }
-        finally
-        {
-            _serviceOperationSemaphore.Release();
-        }
     }
 }

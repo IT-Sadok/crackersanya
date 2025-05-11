@@ -1,4 +1,5 @@
 ﻿using LibraryApp.Interfaces;
+using LibraryApp.Utils;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Text.Json;
@@ -9,7 +10,7 @@ public class JsonRepository : IJsonRepository
 {
     private readonly string _filePath;
     private readonly ILogger<JsonRepository> _logger;
-    private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(1, 1);
+    private readonly SemaphoreSlim _fileSemaphore = new SemaphoreSlim(1, 1);
 
     public JsonRepository(IConfiguration configuration, ILogger<JsonRepository> logger)
     {
@@ -30,29 +31,19 @@ public class JsonRepository : IJsonRepository
 
     public async Task SaveDataAsync<T>(T data)
     {
-        await _semaphore.WaitAsync();
-        try
+        await SemaphoreExecutor.ExecuteAsync(_fileSemaphore, async () =>
         {
             string jsonString = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
             await File.WriteAllTextAsync(_filePath, jsonString);
-        }
-        finally
-        {
-            _semaphore.Release();
-        }
+        });
     }
 
     public async Task<List<T>> LoadDataAsync<T>()
     {
-        await _semaphore.WaitAsync();
-        try
+        return await SemaphoreExecutor.ExecuteAsync(_fileSemaphore, async () =>
         {
             var jsonData = await File.ReadAllTextAsync(_filePath);
             return JsonSerializer.Deserialize<List<T>>(jsonData) ?? new List<T>();
-        }
-        finally
-        {
-            _semaphore.Release();
-        }
+        });
     }
 }
