@@ -1,0 +1,413 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\shelf\\library.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\shelf\\library.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\processors\\batchoperationprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\processors\\batchoperationprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\services\\displayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\services\\displayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\models\\libraryoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\models\\libraryoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\models\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\models\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\utils\\semaphoreexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\utils\\semaphoreexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\repositories\\jsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\repositories\\jsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\common\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\common\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\interfaces\\ibatchoperationprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\interfaces\\ibatchoperationprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\services\\splashscreenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\services\\splashscreenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\interfaces\\ijsonrepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\interfaces\\ijsonrepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\interfaces\\ilibraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\interfaces\\ilibraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\interfaces\\isplashscreenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\interfaces\\isplashscreenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\interfaces\\idisplayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\interfaces\\idisplayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\interfaces\\imenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\interfaces\\imenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\helpers\\inputhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\helpers\\inputhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|c:\\users\\sasha\\desktop\\csharp\\dotnetcourse\\crackersanya\\libraryapp\\builders\\bookbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE176C6D-3872-44A5-A1C6-D979B41268C6}|LibraryApp\\LibraryApp.csproj|solutionrelative:libraryapp\\builders\\bookbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LibraryService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\LibraryService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Services\\LibraryService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\LibraryService.cs",
+              "RelativeToolTip": "LibraryApp\\Services\\LibraryService.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAuwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:25:45.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LibraryOperation.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Models\\LibraryOperation.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Models\\LibraryOperation.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Models\\LibraryOperation.cs",
+              "RelativeToolTip": "LibraryApp\\Models\\LibraryOperation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T16:45:07.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\BookService.cs",
+              "RelativeToolTip": "LibraryApp\\Services\\BookService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAArwCQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:30:34.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\MenuService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Services\\MenuService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\MenuService.cs",
+              "RelativeToolTip": "LibraryApp\\Services\\MenuService.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAnwM8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:31:40.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DisplayService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\DisplayService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Services\\DisplayService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\DisplayService.cs",
+              "RelativeToolTip": "LibraryApp\\Services\\DisplayService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:31:04.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BatchOperationProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Processors\\BatchOperationProcessor.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Processors\\BatchOperationProcessor.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Processors\\BatchOperationProcessor.cs",
+              "RelativeToolTip": "LibraryApp\\Processors\\BatchOperationProcessor.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwHsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T16:43:26.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "library.json",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Shelf\\library.json",
+              "RelativeDocumentMoniker": "LibraryApp\\Shelf\\library.json",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Shelf\\library.json",
+              "RelativeToolTip": "LibraryApp\\Shelf\\library.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-11T19:13:20.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OperationResult.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Models\\OperationResult.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Models\\OperationResult.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Models\\OperationResult.cs",
+              "RelativeToolTip": "LibraryApp\\Models\\OperationResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:34:38.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SemaphoreExecutor.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Utils\\SemaphoreExecutor.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Utils\\SemaphoreExecutor.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Utils\\SemaphoreExecutor.cs",
+              "RelativeToolTip": "LibraryApp\\Utils\\SemaphoreExecutor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T19:00:47.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JsonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Repositories\\JsonRepository.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Repositories\\JsonRepository.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Repositories\\JsonRepository.cs",
+              "RelativeToolTip": "LibraryApp\\Repositories\\JsonRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:29:52.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Models\\Book.cs",
+              "RelativeToolTip": "LibraryApp\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:25:23.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Common\\Enums.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Common\\Enums.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Common\\Enums.cs",
+              "RelativeToolTip": "LibraryApp\\Common\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T16:52:57.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SplashScreenService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\SplashScreenService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Services\\SplashScreenService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Services\\SplashScreenService.cs",
+              "RelativeToolTip": "LibraryApp\\Services\\SplashScreenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:32:11.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IBatchOperationProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IBatchOperationProcessor.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Interfaces\\IBatchOperationProcessor.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IBatchOperationProcessor.cs",
+              "RelativeToolTip": "LibraryApp\\Interfaces\\IBatchOperationProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T17:02:35.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IJsonRepository.cs.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IJsonRepository.cs.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Interfaces\\IJsonRepository.cs.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IJsonRepository.cs.cs",
+              "RelativeToolTip": "LibraryApp\\Interfaces\\IJsonRepository.cs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:26:42.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Program.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Program.cs",
+              "RelativeToolTip": "LibraryApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:32:39.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ILibraryService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\ILibraryService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Interfaces\\ILibraryService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\ILibraryService.cs",
+              "RelativeToolTip": "LibraryApp\\Interfaces\\ILibraryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:25:33.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ISplashScreenService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\ISplashScreenService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Interfaces\\ISplashScreenService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\ISplashScreenService.cs",
+              "RelativeToolTip": "LibraryApp\\Interfaces\\ISplashScreenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:29:06.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Common\\Constants.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Common\\Constants.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Common\\Constants.cs",
+              "RelativeToolTip": "LibraryApp\\Common\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:17:59.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IDisplayService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IDisplayService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Interfaces\\IDisplayService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IDisplayService.cs",
+              "RelativeToolTip": "LibraryApp\\Interfaces\\IDisplayService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:26:33.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IBookService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Interfaces\\IBookService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IBookService.cs",
+              "RelativeToolTip": "LibraryApp\\Interfaces\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:26:24.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IMenuService.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IMenuService.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Interfaces\\IMenuService.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Interfaces\\IMenuService.cs",
+              "RelativeToolTip": "LibraryApp\\Interfaces\\IMenuService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:28:49.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InputHelper.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Helpers\\InputHelper.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Helpers\\InputHelper.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Helpers\\InputHelper.cs",
+              "RelativeToolTip": "LibraryApp\\Helpers\\InputHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:18:30.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BookBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Builders\\BookBuilder.cs",
+              "RelativeDocumentMoniker": "LibraryApp\\Builders\\BookBuilder.cs",
+              "ToolTip": "C:\\Users\\sasha\\Desktop\\csharp\\dotnetcourse\\crackersanya\\LibraryApp\\Builders\\BookBuilder.cs",
+              "RelativeToolTip": "LibraryApp\\Builders\\BookBuilder.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:18:22.622Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
